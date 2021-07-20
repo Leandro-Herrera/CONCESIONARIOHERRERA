@@ -1,0 +1,780 @@
+$colorTitulo1: #E02D2D;
+$colorLetras: white;
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav__general{
+    margin: 15px 0px 0px 0px;
+    padding: 15px;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+
+    .nav__lista{
+        list-style: none;
+        text-align: right;
+    }
+    
+    .nav__bloque{
+        display: inline-block;
+        position: relative;
+        margin-right: 40px;
+        padding-top: 10px;
+    }
+
+    .nav__elemento{
+        position: relative;
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+    .nav__elemento:hover{
+        color: white;
+        transition: 0.5s;
+        display: block;
+    }
+}
+.form__general{
+    margin:10% 20%;
+    padding: 3rem;
+    border: 3px solid black;
+    border-radius: 5%;
+    background-color: #E02D2D;
+
+    .form__lista{
+        display: flex;
+        flex-direction: column;
+        white-space: normal;
+    }
+    .form__bloque{
+        margin-bottom: 20px;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form__elemento{
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+}
+
+body{
+
+    font-size: 62.5%;
+    background-color: black;
+}
+
+.logoTipo{
+    width: 120px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: $colorTitulo1;
+    animation-name: rotador;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes rotador{
+    0%{
+            transform: rotateX(0deg);
+
+    }
+    50%{
+            transform: rotateX(360deg);
+
+    }
+    100%{
+            transform: rotate(0deg);
+
+    }
+
+}
+.tituloLogo{
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+article h3{
+    color: $colorLetras;
+}
+
+.subMenu{
+    display: block;
+    
+}
+th{
+    border: 1px solid rgb(252, 251, 251);
+    color: rgb(253, 253, 253);
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
+tr{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+h1{
+    color: $colorTitulo1;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 900;
+}
+h2{
+    color: rgb(58, 2, 189);
+    text-transform: uppercase;
+    font-size: 0.9cm;
+}
+h3{
+    color: rgb(199, 197, 197);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+    font-weight: 100;
+    font-size: 0%;
+
+}
+li{
+    color: $colorLetras;
+    list-style: none;
+    font-size: 14px;
+    
+}
+.card li{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.colorSublista{
+    color: rgb(10, 39, 12);
+}
+
+header{
+    background-image: linear-gradient(#acacac,#e4e2e2);
+    margin: 0%;
+    padding: 0%;
+    position: sticky;
+    top: 0px;
+
+}
+
+.listaAutos{
+    position: absolute;
+    display: none;
+    background-color: #CCCCCC;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+footer{
+    text-align: right;
+    background-image: linear-gradient(#acacac,#e4e2e2);
+    border: solid 3px black;
+    padding-bottom: 20px;
+    
+    
+}
+footer a{
+    text-decoration: none;
+
+}
+footer li{
+    list-style: none;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: inline-block;
+}
+footer img{
+    border-radius: 60%;
+}
+.fotoDeInicio{
+    min-height: 1000px;
+    background-image: url(fotoInicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 20px;
+}
+.contenedorInicio{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+.misionVision{
+    width: 100%;
+    
+}
+.aside{
+    background: none;
+
+}
+.aside:hover{
+    width: 100%;
+    justify-content: end;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.imagenAutos{
+    background-image: url(imagenAutos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+fieldset{
+    width: 100%;
+}
+#textarea{
+    width: 100%;
+    height: 100%;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+    transition: 1s;
+}
+input:focus{
+    height: 30px;
+    border-radius: 5px;
+}
+#provincia{
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+}
+#cajaSelectiva{
+    position: relative;
+    margin-top: 10px;
+}
+#motosBoton{
+    position: relative;
+    margin-top: 15px;
+}
+#autosCamionetasBoton{
+    position: relative;
+    margin-top: 15px;
+}
+#carouselExampleIndicators{
+    width: 300px;
+    height: 200px;
+}
+
+/*media queries para celulares*/
+@media only screen and ( max-width:600px){
+    
+    .logoTipo{
+            width: 90px;
+            height: 65px;
+            border-radius: 40px;
+            margin-top: 10px;
+            margin-left: 10px;
+    }
+    .tituloLogo{
+            display: inline-block;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+    }
+    
+    h1{
+            color: #E02D2D;
+            font-size: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            font-weight: 600;
+    }
+    .encabezado{
+            display: block;
+            
+    }
+    .nav__general{
+        margin: 15px 0px 0px 0px;
+        padding: 15px;
+        border-top: solid 3px black;
+        border-bottom: solid 3px black;
+    
+        .nav__lista{
+            list-style: none;
+            text-align: right;
+        }
+        
+        .nav__bloque{
+            display: inline-block;
+            position: relative;
+            margin-right: 10px;
+            padding-top: 5px;
+        }
+    
+        .nav__elemento{
+            position: relative;
+            text-decoration: none;
+            color: #000000;
+        }
+    
+    
+        .nav__elemento:hover{
+            color: white;
+            transition: 0.5s;
+            display: block;
+        }
+    }
+    .listaAutos{
+            position: absolute;
+            display: none;
+            background-color: #CCCCCC;
+            border: 1px solid black;
+            padding-bottom: 10px;
+    }
+    .form__general{
+        margin:10% 20%;
+        padding: 3rem;
+        border: 3px solid black;
+        border-radius: 5%;
+        background-color: #E02D2D;
+    
+        .form__lista{
+            display: flex;
+            flex-direction: column;
+            white-space: normal;
+        }
+        .form__bloque{
+            margin-bottom: 10px;
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .form__elemento{
+            text-align: center;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+    }
+    #grilla{
+
+            display: grid;
+            grid-template-columns: 80%;
+            grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+            grid-template-areas:    "letra"
+                                    "uno"
+                                    "dos"
+                                    "tres"
+                                    "cuatro"
+                                    "cinco"
+                                    "seis"
+                                    "siete"
+                                    "ocho";
+            column-gap: 40px;
+            row-gap: 50px;
+            justify-content: center;
+            padding-bottom: 50px;
+            
+    
+            
+    }
+    .letrasDeImagenes{
+            grid-area: letra;
+            color: white;
+            margin-top: 10px;
+            align-self: center;
+    }
+    .grillaDeAutos1{
+            grid-area: uno ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos2{
+            grid-area: dos ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos3{
+            grid-area: tres ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos4{
+            grid-area: cuatro ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos5{
+            grid-area: cinco ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos6{
+            grid-area: seis ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos7{
+            grid-area: siete ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos8{
+            grid-area: ocho ;
+            margin-top: 10px;
+            align-self: center;
+            border-radius: 10px;
+    }
+
+
+}
+/*media queries para tablets y ipads*/
+@media only screen and ( min-width: 600px){
+    .logoTipo{
+            width: 120px;
+            height: 100px;
+            border-radius: 50px;
+            margin-top: 10px;
+            margin-left: 30px;
+    }
+    .tituloLogo{
+            display: inline-block;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+    }
+    .fondoTituloTabla{
+            background-color: #E02D2D;
+    }
+
+    h1{
+            color: #E02D2D;
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 7px;
+            font-weight: 600;
+    }
+
+     
+    header{
+            background-color: #CCCCCC;
+            margin: 0%;
+            padding: 0%;
+            position: sticky;
+            top: 0px;
+    }
+    .nav__general{
+        margin: 15px 0px 0px 0px;
+        padding: 15px;
+        border-top: solid 3px black;
+        border-bottom: solid 3px black;
+    
+        .nav__lista{
+            list-style: none;
+            text-align: right;
+        }
+        
+        .nav__bloque{
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            padding-top: 5px;
+        }
+    
+        .nav__elemento{
+            position: relative;
+            text-decoration: none;
+            color: #000000;
+        }
+    
+    
+        .nav__elemento:hover{
+            color: white;
+            transition: 0.5s;
+            display: block;
+        }
+    }
+    .subMenu{
+            display: block;
+            
+    }
+    .listaAutos{
+            position: absolute;
+            display: none;
+            background-color: #CCCCCC;
+            border: 1px solid black;
+            padding-bottom: 10px;
+    }
+    .form__general{
+        margin:10% 20%;
+        padding: 3rem;
+        border: 3px solid black;
+        border-radius: 5%;
+        background-color: #E02D2D;
+    
+        .form__lista{
+            display: flex;
+            flex-direction: column;
+            white-space: normal;
+        }
+        .form__bloque{
+            margin-bottom: 10px;
+            height: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .form__elemento{
+            text-align: center;
+            font-weight: 500;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    #grilla{
+
+            display: grid;
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            grid-template-areas:    "letra  letra"
+                                    "uno    dos"
+                                    "tres   cuatro"
+                                    "cinco  seis"
+                                    "siete  ocho";
+            column-gap: 40px;
+            row-gap: 30px;
+            justify-content: center;
+            padding-bottom: 50px;
+            
+    
+            
+    }
+    .letrasDeImagenes{
+            grid-area: letra;
+            color: white;
+            margin-top: 25px;
+            align-self: center;
+    }
+    .grillaDeAutos1{
+            grid-area: uno ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos2{
+            grid-area: dos ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos3{
+            grid-area: tres ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos4{
+            grid-area: cuatro ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos5{
+            grid-area: cinco ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos6{
+            grid-area: seis ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos7{
+            grid-area: siete ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+    .grillaDeAutos8{
+            grid-area: ocho ;
+            margin-top: 25px;
+            align-self: center;
+            border-radius: 10px;
+    }
+}
+/*media queries para computadoras de escritorio o mas*/
+@media only screen and (min-width: 769px){
+    .logoTipo{
+            width: 120px;
+            height: 100px;
+            border-radius: 50px;
+            margin-top: 10px;
+            margin-left: 30px;
+    }
+    .tituloLogo{
+            display: inline-block;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 20px;
+    }
+    article h3{
+            color: white;
+    }
+    .subMenu{
+            display: block;
+            
+    }
+    h1{
+            color: #E02D2D;
+            font-size: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 10px;
+            font-weight: 900;
+    }
+    h2{
+            color: rgb(58, 2, 189);
+            text-transform: uppercase;
+            font-size: 0.9cm;
+    }
+    ul{
+            list-style: none;
+            font-weight: 100;
+            font-size: 0%;
+    
+    }
+    li{
+            color: rgb(255, 255, 255);
+            list-style: none;
+            font-size: 14px;
+            
+    }
+    p{
+            color: rgb(251, 253, 255);
+            font-size: 15px;
+            font-family: 'Pattaya', sans-serif;
+            
+    }
+    .colorSublista{
+            color: rgb(245, 248, 245);
+    }
+     
+    header{
+            background-color: #CCCCCC;
+            margin: 0%;
+            padding: 0%;
+            position: sticky;
+            top: 0px;
+    }
+    nav{
+            margin: 15px 0px 0px 0px;
+            padding: 15px;
+            border-top: solid 3px black;
+            border-bottom: solid 3px black;
+    
+            
+    }
+    nav li{
+            display: inline-block;
+            position: relative;
+            margin-right: 40px;
+            padding-top: 10px;
+    
+    }
+    nav li a{
+            position: relative;
+            text-decoration: none;
+            color: #000000;
+    }
+    nav li a:hover{
+            color: white;
+            
+    }
+    nav li a:hover ul{
+            display: block;
+    }
+    nav > ul{
+            list-style: none;
+            text-align: right;
+            
+    }
+    nav li:hover > ul{
+            display: block;
+
+    }
+    .listaAutos{
+            position: absolute;
+            display: none;
+            background-color: #CCCCCC;
+            border: 1px solid black;
+            padding-bottom: 10px;
+    }
+    .fotoDeInicio{
+            min-height: 1000px;
+            background-image: url(fotoInicio.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+    }
+    .contenedorInicio{
+            width: 100%;
+            display: flex;
+    }
+    .misionVision{
+            width: 100%;
+            
+    }
+    
+    .aside{
+            height: 40%;
+            width: 100%;
+            justify-content: end;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: 2s;
+    }
+    .aside:hover{
+            height: 100%;
+    }
+    @import "grilla.scss";
+}

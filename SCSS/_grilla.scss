@@ -1,0 +1,87 @@
+#grilla{
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px 200px 200px 200px ;
+    grid-template-areas:    "letra  letra   letra"
+                            "uno    dos     tres"
+                            "cuatro cinco   seis"
+                            "siete  ocho    nada";
+    column-gap: 40px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+
+    
+}
+.letrasDeImagenes{
+    grid-area: letra;
+    color: white;
+    margin-top: 25px;
+    align-self: center;
+}
+.grillaDeAutos1{
+    grid-area: uno ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos2{
+    grid-area: dos ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos3{
+    grid-area: tres ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos4{
+    grid-area: cuatro ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos5{
+    grid-area: cinco ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos6{
+    grid-area: seis ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos7{
+    grid-area: siete ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+.grillaDeAutos8{
+    grid-area: ocho ;
+    margin-top: 25px;
+    align-self: center;
+    border-radius: 10px;
+
+}
+
+@for $i from 1 to 8 {
+    .grillaDeAutos#{$i}{
+        animation-name: rotador;
+        animation-duration: 1s * $i;
+        animation-iteration-count: 1s;
+    }
+}
